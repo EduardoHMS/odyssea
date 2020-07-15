@@ -1,0 +1,627 @@
+@font-face{
+    font-family: TextWriter;
+    src: url(/font/veteran\ typewriter.ttf);
+}
+@font-face{
+    font-family: Glitch;
+    src: url(/font/BadSignal.otf)
+}
+@font-face{
+    font-family: Night;
+    src: url(/font/nightmare.ttf)
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@700&display=swap');
+body{
+    background-color: #0D0D0D;
+    font-family: 'Anton', sans-serif;
+    
+}
+.container {
+    width: 100%;
+}
+.menu {
+    list-style: none;
+    text-align: left;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    text-decoration: none;
+    color: #8C0303;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+    font-family: TextWriter;
+    transition: all 0.3s;
+}
+.menu a:hover{
+    color: #F26A4B;
+}
+.menu .is-active{
+    color: #F26A4B;
+}
+
+main{
+    background-color: #171717;
+}
+.estampado img{
+    width: 100%;
+}
+
+.artigoLivros .titulo{
+    color: #8C0303;
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: Glitch;
+    letter-spacing: 0.2em;
+}
+.artigoLivros .texto{
+    color: white;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.artigoLivros .texto a{
+    text-decoration: none;
+    color: #8C0303;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+    transition: all .5s;
+}
+.artigoLivros .texto a:hover{
+    color: #F26A4B;
+}
+.artigoLivros .secao img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.artigoFilmes .titulo{
+    color: #8C0303;
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: Glitch;
+    letter-spacing: 0.2em;
+}
+.artigoFilmes .texto{
+    color: white;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.artigoFilmes .texto a{
+    text-decoration: none;
+    color: #8C0303;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+    transition: all .5s;
+}
+.artigoFilmes .texto a:hover{
+    color: #F26A4B;
+}
+.artigoFilmes .secao img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.artigoContato .titulo{
+    color: #8C0303;
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: Glitch;
+    letter-spacing: 0.2em;
+}
+.artigoContato .texto{
+    color: white;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.artigoContato .texto a{
+    text-decoration: none;
+    color: #8C0303;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+    transition: all .5s;
+}
+.artigoContato .texto a:hover{
+    color: #F26A4B;
+}
+.artigoContato .secao img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.rodape p{
+    text-align: center;
+    color: #8C0303;
+    font-size: 18px;
+    padding: 20px;
+}
+
+@media screen and (min-width:768px){
+    .container {
+        width: 700px;
+        margin: auto;
+    }
+    .menu {
+        text-align: center;
+    }
+    .secaoClassicos .tituloLivro {
+        font-size: 15px;
+    }
+    .secaoRomance .tituloLivro {
+        font-size: 15px;
+    }
+    .secaoCrime .tituloLivro {
+        font-size: 15px;
+    }
+    .secaoFantasia .tituloLivro {
+        font-size: 15px;
+    }
+    .categoriasJogos .tituloFilme{
+        font-size: 15px;
+    }
+    .categoriasKiller .tituloFilme{
+        font-size: 15px;
+    }
+    .categoriasSobrenatural .tituloFilme{
+        font-size: 15px;
+    }
+    .categoriasComedia .tituloFilme{
+        font-size: 15px;
+    }
+    .topo {
+        width: 60px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+@media screen and (min-width:1366px){
+    .container {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+
+/* Page Livros */
+.secaoCategorias .categorias{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+}
+
+.secaoCategorias .tblTitulo{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: #8C0303;
+    text-shadow: 2px 2px 2px black;
+}
+.secaoCategorias .tblResumo{
+    text-align: justify;
+    padding: 10px 20px;
+    color: #171717;
+    letter-spacing: 0.1em;
+    background-color: white;
+}
+.secaoCategorias .tblLink a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+    background-color: #8C0303;
+    text-shadow: 2px 1px 1px black;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+}
+.secaoCategorias .tblLink a:hover{
+    color: #F26A4B;
+}
+
+.secaoClassicos .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+
+.secaoClassicos .livro {
+    background-color: white;
+    padding: 10px;
+}
+.secaoClassicos .livro img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.secaoClassicos .tituloLivro {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.secaoClassicos .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.secaoClassicos .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.secaoRomance .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+.secaoRomance .livro {
+    background-color: pink;
+    padding: 10px;
+}
+.secaoRomance .livro img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.secaoRomance .tituloLivro {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.secaoRomance .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.secaoRomance .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.secaoCrime .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+.secaoCrime  .livro {
+    background-color: lightyellow;
+    padding: 10px;
+}
+.secaoCrime .livro img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.secaoCrime .tituloLivro {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.secaoCrime  .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.secaoCrime  .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.secaoFantasia .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+.secaoFantasia .livro {
+    background-color: rgb(190, 230, 255);
+    padding: 10px;
+}
+.secaoFantasia .livro img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.secaoFantasia .tituloLivro {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.secaoFantasia .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.secaoFantasia .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+.topo {
+    width: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.topo img{
+    width: 100%;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+}
+
+/* Page Filmes */
+.categoriasFilmes .categorias{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+}
+.categoriasFilmes .tblTitulo{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: #8C0303;
+    text-shadow: 2px 2px 2px black;
+}
+.categoriasFilmes .tblResumo{
+    text-align: justify;
+    padding: 10px 20px;
+    color: #171717;
+    letter-spacing: 0.1em;
+    background-color: white;
+}
+.categoriasFilmes .tblLink a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+    background-color: #8C0303;
+    text-shadow: 2px 1px 1px black;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+}
+
+.categoriasJogos .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+.categoriasJogos .filme {
+    background-color: white;
+    padding: 10px;
+}
+.categoriasJogos .filme img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.categoriasJogos .tituloFilme {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.categoriasJogos .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.categoriasJogos .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.categoriasSobrenatural .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+.categoriasSobrenatural .filme {
+    background-color: white;
+    padding: 10px;
+}
+.categoriasSobrenatural .filme img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.categoriasSobrenatural .tituloFilme {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.categoriasSobrenatural .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.categoriasSobrenatural .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.categoriasKiller .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+.categoriasKiller .filme {
+    background-color: white;
+    padding: 10px;
+}
+.categoriasKiller .filme img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.categoriasKiller .tituloFilme {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.categoriasKiller .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.categoriasKiller .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.categoriasComedia .titulo{
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+}
+.categoriasComedia .filme {
+    background-color: white;
+    padding: 10px;
+}
+.categoriasComedia .filme img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.categoriasComedia .tituloFilme {
+    color: white;
+    background-color: #8C0303;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.categoriasComedia .resumo{
+    color: white;
+    background-color: #8C0303;
+    padding: 10px;
+}
+.categoriasComedia .resumo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.categoriaContato .titulo{
+    font-size: 40px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+    text-align: center;
+}
+.categoriaContato .subtitulo{
+    font-size: 20px;
+    color: white;
+    font-family: Glitch;
+    letter-spacing: .18em;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.categoriaContato .imagem{
+    margin: auto;
+}
+
+.categoriaContato label{
+    color: white;
+    font-family: TextWriter;
+    font-size: 20px;
+}
+.categoriaContato input{
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 3px solid #8C0303;
+}
+.categoriaContato textarea{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border: 3px solid #8C0303;
+    border-radius: 25px;
+}
+.categoriaContato button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border: 3px solid #8C0303;
+    border-radius: 25px;
+    transition: all .2s;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+}
+.categoriaContato button:hover{
+    background-color: #8C0303;
+}
+.categoriaContato .tabela{
+    width: 100%;
+}
+.categoriaContato .tabela td{
+    width: 50%;
+    font-family: Night;
+}
+.categoriaContato .tabela a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #8C0303;
+    font-size: 90px;
+    cursor: url(https://img.icons8.com/color/48/000000/cross.png), default;
+}
+.categoriaContato .tabela a:hover{
+    color: #F26A4B;
+}
